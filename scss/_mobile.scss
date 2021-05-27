@@ -52,6 +52,11 @@
     }
   }
   .about-info {
+    .bio {
+      p {
+        font-size: 1rem;
+      }
+    }
     grid-template-areas:
       "bioimage"
       "bio"

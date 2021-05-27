@@ -189,6 +189,8 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
+    height: 215px;
+    object-fit: cover;
     border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.5;
@@ -275,6 +277,8 @@ main {
   .about-info {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
+    .about-info .bio p {
+      font-size: 1rem; }
     .about-info .portrait {
       width: 150px;
       height: 150px; }
