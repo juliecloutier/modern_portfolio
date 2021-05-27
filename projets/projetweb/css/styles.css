@@ -1,0 +1,351 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+body a {
+  color: #946F2B;
+}
+
+body a:hover {
+  color: #60929C;
+}
+
+.container-fluid {
+  padding: 0px;
+}
+
+.row {
+  margin: 0px;
+}
+
+#first {
+  background-image: url(../images/GF-5.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 875px;
+  padding: 0px;
+}
+
+@media screen and (max-width: 580px) {
+  #first {
+    height: 500px;
+  }
+}
+
+.top-menu {
+  background-color: black;
+  color: white;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 25px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.top-menu .dropdown {
+  display: none;
+}
+
+@media screen and (max-width: 580px) {
+  .top-menu .dropdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.top-menu .logo {
+  padding: 5px 25px;
+}
+
+.top-menu .liens {
+  font-size: 25pt;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.top-menu .liens a {
+  color: white;
+}
+
+.top-menu .admin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top-menu .admin img {
+  height: 20px;
+}
+
+@media screen and (max-width: 580px) {
+  .top-menu .liens {
+    display: none;
+  }
+  .top-menu .admin {
+    display: none;
+  }
+}
+
+#header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.titre {
+  margin: 25px;
+  background-color: rgba(255, 255, 255, 0.103);
+}
+
+.titre .texte {
+  color: white;
+  text-align: center;
+}
+
+.titre .texte h1 {
+  font-size: 130pt;
+}
+
+.titre .texte p {
+  font-size: 30pt;
+}
+
+@media screen and (max-width: 580px) {
+  .titre .texte h1 {
+    font-size: 70pt;
+  }
+  .titre .texte p {
+    font-size: 20pt;
+  }
+}
+
+.bio1 {
+  background-image: url(../images/backgroundBio.png);
+  background-size: cover;
+  background-position: center;
+  padding: 100px 25px;
+}
+
+.bio1 .top-bio {
+  color: #C8C8C8;
+  font-size: 45pt;
+}
+
+.bio1 p {
+  color: #C8C8C8;
+  font-size: 35pt;
+  margin-top: 20%;
+}
+
+.bio1 p span {
+  font-family: 'Castoro', serif;
+  font-style: italic;
+  font-size: 55pt;
+}
+
+@media screen and (max-width: 970px) {
+  .bio1 p {
+    font-size: 20pt;
+  }
+}
+
+.bio2.container-fluid {
+  padding: 50px;
+}
+
+.bio2.container-fluid img {
+  width: 75%;
+}
+
+.bio2.container-fluid .portrait {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.bio2.container-fluid p {
+  font-size: 20pt;
+}
+
+.bio3.container-fluid {
+  background-image: url("../images/GF-6.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0px;
+}
+
+.last {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 100px;
+  padding: 25px;
+  font-size: 20pt;
+  color: #C8C8C8;
+}
+
+@media screen and (max-width: 500px) {
+  .last {
+    background-color: transparent;
+  }
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  padding: 15px;
+  width: 100%;
+  margin: 0px;
+}
+
+.social img {
+  padding-right: 50px;
+  height: 20px;
+}
+
+.newsletter {
+  position: fixed;
+  padding: 25px;
+  top: 50%;
+  left: 50%;
+  background-color: #C8C8C8;
+  border: 2px #222222 solid;
+  z-index: 1;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+}
+
+.newsletter p {
+  text-align: right;
+}
+
+.newsletter a {
+  text-decoration: none;
+}
+
+.newsletter form > div {
+  padding-top: 5px;
+}
+
+#portfolioProjets {
+  margin-top: 50px;
+  padding: 50px;
+}
+
+#portfolioProjets .gauche {
+  color: #707070;
+  text-align: right;
+}
+
+#portfolioProjets .gauche .row {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#portfolioProjets .gauche .titre h1 {
+  color: #222222;
+  font-size: 110pt;
+  line-height: 85pt;
+}
+
+#portfolioProjets .gauche .description {
+  font-size: 26pt;
+}
+
+#portfolioProjets .droite {
+  height: 800px;
+  width: 630px;
+}
+
+#portfolioProjets .droite img {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+#login {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#login .form {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#login a {
+  font-weight: bold;
+}
+
+#profil {
+  height: 100vh;
+  padding-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+#ajout-projet {
+  margin-top: 100px;
+  font-size: x-large;
+}
+
+#ajout-projet .row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+#modifier-compte {
+  height: 100vh;
+  background-color: royalblue;
+}
+/*# sourceMappingURL=styles.css.map */
