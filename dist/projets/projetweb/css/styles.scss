@@ -1,0 +1,339 @@
+$h1_big: 130pt;
+$h1_small:70pt;
+$p_big:30pt;
+$p_small:20pt;
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Bebas Neue', cursive;
+   a{
+    color:#946F2B;
+    &:hover{
+        color:#60929C;
+    }
+   }
+}
+
+.container-fluid{
+    padding: 0px;
+}
+
+
+.row{
+    margin:0px;
+}
+
+
+#first{
+     background-image: url(../images/GF-5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height: 875px;
+    padding: 0px;
+    
+    @media screen and (max-width: 580px) {
+        
+            height: 500px;
+         
+       
+    }
+}
+
+// Menu fixe
+.top-menu{
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 25px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    
+    .dropdown{
+        display: none;
+        @media screen and (max-width: 580px) {
+            display: flex;
+        }
+    }
+    .logo{
+        padding: 5px 25px;
+    }
+    .liens{
+        font-size: 25pt;
+        display: flex;
+        width: 75%;
+        justify-content: space-evenly;
+            a{
+            color: white;
+            }
+    }
+        
+    
+    .admin{
+        display: flex;
+        img{
+            height: 20px;
+        }
+
+    }
+    @media screen and (max-width: 580px) {
+        .liens{
+            display: none;
+        }
+        .admin{
+            display:none ;
+        }
+      
+      }
+
+
+
+    }
+    
+
+#header{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+    
+}   
+
+    .titre{
+        
+        margin: 25px;
+    background-color: rgba(255, 255, 255, 0.103);        
+  
+    .texte {
+        color: white;
+        text-align: center;
+        h1{
+            font-size: $h1_big;
+        }
+        p{
+            font-size: $p_big;
+        }
+}
+@media screen and (max-width: 580px) {
+    .texte{
+        h1{
+            font-size: $h1_small;
+        }
+        p{
+            font-size: $p_small;
+        }
+    }}
+}
+
+
+
+
+
+// Section biographie
+.bio1{
+    background-image: url(../images/backgroundBio.png);
+    background-size: cover;
+    background-position: center;
+    padding:100px 25px;
+    
+    // @media screen and (max-width: 580px) {
+   
+    //     height: 500px;  
+    // }
+    .top-bio{
+        
+        color: #C8C8C8;
+        font-size: 45pt;
+        
+       
+    }
+    p{
+        
+        color: #C8C8C8;
+        font-size: 35pt;
+        margin-top: 20%;
+        
+        span{
+            font-family: 'Castoro', serif;
+            font-style: italic;
+            font-size: 55pt;
+        }
+        
+    }
+    @media screen and (max-width:970px) {
+        // height: 700px; 
+        p{
+            font-size: $p_small;
+        }
+    }
+    
+}
+
+
+.bio2.container-fluid {
+    padding: 50px;
+    img{
+        width: 75%;
+    }
+    .portrait{
+       justify-content: flex-end;
+      
+    }
+    p{
+        
+        font-size: 20pt;
+       
+    }
+}
+
+.bio3.container-fluid{
+    background-image: url("../images/GF-6.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0px;
+}
+
+.last{
+ background-color: rgba(0, 0, 0, 0.5);    
+ margin: 100px;
+ padding: 25px;
+ font-size: $p_small;
+ color: #C8C8C8;
+ @media screen and (max-width:500px) {
+     background-color:transparent;
+ }
+}
+
+
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 15px;
+    width: 100%;
+    margin: 0px;    
+        
+            img{
+                padding-right: 50px;
+                height: 20px;
+            }
+    }
+
+.newsletter{
+    position: fixed;
+    padding: 25px;
+    top: 50%;
+    left: 50%;
+    background-color: #C8C8C8;
+    border: 2px #222222 solid;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    display: none;
+    p{
+        text-align: right;
+
+    }
+   a{
+       text-decoration: none;
+       
+   }
+   form>div{
+       padding-top: 5px;
+   }
+}
+
+
+
+
+// Portfolio
+
+#portfolioProjets{
+    margin-top: 50px;
+    padding: 50px;
+    .gauche{
+       color:#707070;
+        text-align: right;
+        .row{
+            justify-content: flex-end;
+        }
+        .titre{
+            h1{
+                color:#222222;
+                font-size: 110pt;
+                line-height: 85pt;
+            }
+        }
+        .description{
+            font-size: 26pt;
+        }
+        
+    }
+    .droite{
+        height: 800px;
+        width:630px;
+
+        img{
+            max-width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
+    }
+}
+
+
+// Login
+
+#login{
+height: 100vh;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    .form{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    a{ 
+        font-weight: bold;
+    }
+   
+
+}
+#profil{
+    height: 100vh;
+    padding-top: 10%;
+    display: flex;
+        justify-content: center;
+        // align-items: center;
+        // background-color: rebeccapurple; 
+        text-align: center;
+
+        .profil-bienvenue{
+            // background-color:#707070;
+        }
+
+}
+
+// Liste projet vue
+#ajout-projet{
+    margin-top: 100px;
+    .row{
+        justify-content: space-between;
+        text-align: center;
+    }
+    font-size: x-large;
+}
+
+// Modifier compte
+#modifier-compte{
+    
+    height: 100vh;
+    background-color: royalblue;
+}
