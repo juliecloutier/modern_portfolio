@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Synthèse - Julie Cloutier</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <div id="app">
+        <div  class="intro">
+            <h1>Tic Tac Toe</h1>
+            <div v-if="victoire"  class="gagnant">{{ gagnant }}</div>
+            <!-- Quand click sur bouton jouer, le jeu devient actif et le bouton disparait -->
+            <button :class="{hidden: isActive}" @click="isActive = !isActive, jeu = !jeu, victoire = !victoire">{{ jouer }}</button>
+
+        </div>
+        <div v-if="jeu" class="jeu">
+            
+            <div v-for="(square, i) in squares" @click="changerTour(i)"  class="square">
+                <transition name="grille">
+                    <span v-show="square !== null">
+                        {{ square }}
+                    </span>
+                </transition>
+            </div>
+                
+                
+            </div>
+            <div v-if="jeu" class="tour">Tour actuel: {{ tour }}</div>
+            
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>
